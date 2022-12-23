@@ -1,3 +1,5 @@
+Readme En Français
+[![FR](https://img.shields.io/badge/lang-fr-red.svg)](https://github.com/shahwahed/CloudInitSrvTemplate/blob/master/Readme-FR.md)
 
 # Cloud init template for terraform
 
