@@ -35,7 +35,8 @@ Each file begin with a number, from 00 to 99.
 5X ngnix frontend
 99 last step with final reboot
 
-
+| File        | Description           |
+| ------------- | ------------- |
 | 00.disableAutoUpdate_cloud-init.tftpl  | disable autoupdate, to speed up VM creation |
 | 11.systembase.IPFORCED.tftpl  | setup properly ip address in host file |
 |10.systembase.tftpl    |   setup host file with dyn ip |

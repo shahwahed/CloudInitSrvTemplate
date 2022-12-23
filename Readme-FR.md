@@ -38,7 +38,8 @@ Chaque fichier template commence par des chiffres de 00 a 99 pour mieux s’y re
 5X ngnix frontend
 99 etape final pour reboot
 
-
+| Fichier        | Description           |
+| ------------- | ------------- |
 | 00.disableAutoUpdate_cloud-init.tftpl  | désactivation de l'autoupdate, pour accèlerer les déploiement |
 | 11.systembase.IPFORCED.tftpl  | config du hostname avec une ip static fixe |
 |10.systembase.tftpl    |   config du hostname  |
