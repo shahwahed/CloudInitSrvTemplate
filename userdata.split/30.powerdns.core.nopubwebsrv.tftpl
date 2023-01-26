@@ -141,6 +141,7 @@ echo "create reverse zone"
 RDNS="`echo $IPADDR| sed -r 's/([^.]+)\.([^.]+)\.([^.]+)\.([^ ]+)/\3\.\2\.\1/'`"
 FRDNS="`echo $IPADDR| sed 's/^.*\.\([^.]*\)$/\1/'`"
 pdnsutil create-zone  $RDNS.in-addr.arpa
+pdnsutil add-record $RDNS.in-addr.arpa @ NS 86400 ns1.$${DOMAIN}
 pdnsutil add-record $RDNS.in-addr.arpa $FRDNS PTR $${HOSTNAME}.$${DOMAIN}
 # Change zone type from NATIVE to MASTER
 pdnsutil set-kind $DOMAIN MASTER
